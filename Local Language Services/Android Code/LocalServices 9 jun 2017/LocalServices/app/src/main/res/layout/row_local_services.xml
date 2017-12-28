@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/dim_2"
+    android:elevation="@dimen/dim_5"
+    android:layout_height="@dimen/dim_170"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLocalServices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <com.localservices.others.custom_view.MyTextViewRegular
+            android:id="@+id/txtLocalServicesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bgBlackTransparent"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:text="Local Services"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_16" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

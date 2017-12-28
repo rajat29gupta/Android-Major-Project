@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardHealth"
+    android:elevation="@dimen/dim_5"
+    android:background="@android:color/white"
+    android:layout_margin="@dimen/dim_2"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dim_5"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgHealthTips"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_150"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgHealthTips"
+            android:orientation="vertical">
+
+            <com.localservices.others.custom_view.MyTextViewBold
+                android:id="@+id/txtHealthTipName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_5"
+                android:text="Health Tip Name"
+                android:textColor="@color/primary_text" />
+
+            <com.localservices.others.custom_view.MyTextViewRegular
+                android:id="@+id/txtHealthTipDescription"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_5"
+                android:text="Description"
+                android:textColor="@color/secondary_text" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

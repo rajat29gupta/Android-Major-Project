@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:elevation="@dimen/dim_5"
+    android:layout_margin="@dimen/dim_2"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:padding="@dimen/dim_5"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dim_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/calendar"
+            android:visibility="gone"
+            android:layout_width="@dimen/dim_25"
+            android:layout_height="@dimen/dim_25" />
+        <com.localservices.others.custom_view.MyTextViewRegular
+            android:id="@+id/txtNewsDate"
+            android:background="@color/bgBlackTransparent"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dim_3"
+            android:text="Date"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgNews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgNews"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.localservices.others.custom_view.MyTextViewBold
+                android:id="@+id/txtNewsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dim_5"
+                android:text="News Title"
+                android:textColor="@color/primary_text" />
+
+
+        </RelativeLayout>
+
+        <com.localservices.others.custom_view.MyTextViewRegular
+            android:id="@+id/txtNewsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim_5"
+            android:text="Description"
+            android:textColor="@color/secondary_text" />
+    </LinearLayout>
+</RelativeLayout>
+    </android.support.v7.widget.CardView>

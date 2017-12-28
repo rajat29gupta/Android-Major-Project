@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/dim_5"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<com.localservices.others.custom_view.MyTextViewBold
+    android:text="No Internet Connection"
+    android:padding="@dimen/dim_5"
+    android:textSize="@dimen/dim_16"
+    android:textColor="@color/primary_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <com.localservices.others.custom_view.MyTextViewRegular
+        android:padding="@dimen/dim_5"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        android:text="You are offline please check your internet connection."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.localservices.others.custom_view.MyTextViewBold
+        android:id="@+id/txtOk"
+        android:padding="@dimen/dim_10"
+        android:gravity="center"
+        android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

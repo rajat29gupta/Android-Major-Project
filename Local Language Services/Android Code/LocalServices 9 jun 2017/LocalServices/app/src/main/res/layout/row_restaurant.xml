@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:elevation="@dimen/dim_5"
+    android:layout_margin="@dimen/dim_2"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dim_5"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/imgRestaurant"
+    android:scaleType="fitXY"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_150" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.localservices.others.custom_view.MyTextViewBold
+            android:id="@+id/txtRestaurantName"
+            android:text="Restaurant Name"
+            android:textColor="@color/primary_text"
+            android:padding="@dimen/dim_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgCat"
+                android:src="@drawable/veg"
+                android:layout_margin="@dimen/dim_5"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30" />
+        <com.localservices.others.custom_view.MyTextViewRegular
+            android:id="@+id/txtRestaurantCat"
+            android:text="Restaurant Category veg/non-veg"
+            android:textColor="@color/secondary_text"
+            android:padding="@dimen/dim_3"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/maps"
+                android:layout_margin="@dimen/dim_5"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30" />
+        <com.localservices.others.custom_view.MyTextViewRegular
+            android:id="@+id/txtRestaurantAddress"
+            android:text="Restaurant Address"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/secondary_text"
+            android:padding="@dimen/dim_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

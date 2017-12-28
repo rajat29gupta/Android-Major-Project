@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/dim_300"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+<com.localservices.others.custom_view.MyTextViewBold
+    android:text="Select Language"
+    android:textColor="@android:color/white"
+    android:background="@color/colorPrimary"
+    android:textSize="@dimen/font_size_16"
+    android:padding="@dimen/dim_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtEnglish"
+        android:text="English"
+        android:padding="@dimen/dim_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtHindi"
+        android:text="हिन्दी"
+        android:padding="@dimen/dim_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtSpanish"
+        android:text="español"
+        android:padding="@dimen/dim_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
